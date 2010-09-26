@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "table_to_model"
-    gem.summary = %Q{generate models via an Active Record Connection}
+    gem.summary = %Q{Generate models from a databases tables from an Active Record Connection}
     gem.description = %Q{Using an ActiveRecord connection this tool generates the corresponding models }
     gem.email = "stefan.penner@gmail.com"
     gem.homepage = "http://github.com/stefanpenner/table_to_model"
