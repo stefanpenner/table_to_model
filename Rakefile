@@ -10,11 +10,11 @@ begin
     gem.email = "stefan.penner@gmail.com"
     gem.homepage = "http://github.com/stefanpenner/table_to_model"
     gem.authors = ["Stefan Penner"]
-    s.executables = ["table_to_model"]
+    gem.executables = ["table_to_model"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_dependency "thor", "0.14.2"
-    gem.add_dependency "active_record",   "3.0.0"
-    gem.add_dependency "active_support",  "3.0.0"
+    gem.add_dependency "activerecord",   "3.0.0"
+    gem.add_dependency "activesupport",  "3.0.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
