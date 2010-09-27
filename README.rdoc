@@ -1,6 +1,14 @@
 = table_to_model
 
-Description goes here.
+Using AR, generate models from the database. This could be usefull when working with pre-existing databases.
+
+== Example
+
+Simple Case:
+    table_to_model gen --adapter mysql --database somedatabase --username myusername --output_dir ~/directory_of_models
+    
+With Module:
+    table_to_model gen --adapter mysql --database somedatabase --username myusername --output_dir ~/directory_of_models --module legacy
 
 == Note on Patches/Pull Requests
  
