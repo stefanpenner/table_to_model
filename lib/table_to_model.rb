@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'thor'
 require 'active_record'
 require 'active_support/core_ext/string/inflections'

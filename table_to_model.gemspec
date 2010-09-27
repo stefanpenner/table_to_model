@@ -21,16 +21,20 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
+     "Gemfile.lock",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "bin/table_to_model",
      "lib/table_to_model.rb",
      "lib/templates/model.tt",
      "lib/templates/model_in_module.tt",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/table_to_model_spec.rb"
+     "spec/table_to_model_spec.rb",
+     "table_to_model.gemspec"
   ]
   s.homepage = %q{http://github.com/stefanpenner/table_to_model}
   s.rdoc_options = ["--charset=UTF-8"]
