@@ -8,14 +8,24 @@ module TableToModel
 
     source_root File.dirname(__FILE__) + '/templates'
     desc "generate models", "generate models from the database"
-    method_options :adapter => :string , :database => :string, :username => :string, :password => :string, :output_dir => :string, :module => :string
+    method_options :adapter => :string , 
+      :database => :string, 
+      :username => :string, 
+      :password => :string, 
+      :output_dir => :string,
+      :module   => :string,
+      :driver   => :string,
+      :url      => :string
+
     def gen
       
       ActiveRecord::Base.establish_connection({
         :adapter  => options[:adapter],
         :database => options[:database],
         :username => options[:username],
-        :password => options[:password]
+        :password => options[:password],
+        :driver   => options[:driver],
+        :url      => options[:url]
       })
 
       module_name = options[:module]
